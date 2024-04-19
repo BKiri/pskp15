@@ -54,7 +54,7 @@
         let name = document.getElementById('inpName').value;
         let number = document.getElementById('inpName2').value;
 
-        if(name === "" || number === "" || !isNaN(name) || !validatePhoneNumber(number) || !validateName(name)){
+        if(name === "" || number === "" || isNaN(name) || !validatePhoneNumber(number) || !validateName(name)){
             document.getElementById('BTNsubm').disabled = true;
             document.getElementById('BTNsubm').classList.add('disabled-button');
         } else {
